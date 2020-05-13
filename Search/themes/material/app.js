@@ -756,8 +756,8 @@ function file_video(path) {
  const url = window.location.origin + path;
   let player_items = [
     {
-      text: 'Samsung',
-      href: `intent:${url}#Intent;package=com.samsung.android.video;S.title=${path};end`,
+      text: 'VLC',
+      href: `vlc://${url}`,
     },
     {
       text: 'MXPlayer(Pro)',
@@ -768,7 +768,7 @@ function file_video(path) {
       href: `nplayer-${url}`,
     },
     {
-      text: 'VLC',
+      text: 'VLC-iOS',
       href: `vlc-x-callback://x-callback-url/ACTION?url=${url}`,
     },
     {
